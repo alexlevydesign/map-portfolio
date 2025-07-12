@@ -1,9 +1,16 @@
+import Link from "next/link";
 import styles from "./button.module.scss";
+import globals from "../page.module.scss"
 
-export default function Button() {
+
+
+
+
+export default function Button({ children, link={}, variant='primary' }
+    
+) {
+    const className = styles[`button_${variant}`];
     return (
-        <div className={styles.button}>
-            <p>Hello world</p>
-        </div>
+        <Link href={link} className={className} >{children}</Link>
     );
 }
