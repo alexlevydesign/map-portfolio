@@ -1,8 +1,6 @@
 import styles from "./contact.module.scss";
 
 import NavBar from "../components/Navbar";
-import Button from "./components/Button";
-import Layout from "../layout";
 
 
 export default function Contact() {

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./button.module.scss";
-import globals from "../page.module.scss"
 
 
 

@@ -1,8 +1,8 @@
 import styles from "./about.module.scss";
 
 import NavBar from "../components/Navbar";
-import Button from "./components/Button";
-import Layout from "../layout";
+// import Button from "./components/Button";
+
 
 
 export default function About() {

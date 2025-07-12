@@ -1,8 +1,6 @@
-import Image from "next/image";
 import styles from "./page.module.scss";
 
 import NavBar from "./components/Navbar";
-import Button from "./components/Button";
 import ImageGrid from "./components/ImageGrid";
 
 export default function Home() {
