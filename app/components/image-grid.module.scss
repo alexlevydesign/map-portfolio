@@ -40,7 +40,7 @@
 .image_grid {
     display: grid;
     // row-gap: 1rem;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     // max-height: 374px;
     object-fit: cover;
     grid-template-columns: 1fr 1fr;
@@ -61,8 +61,10 @@
     object-fit: cover;
 }
 .image_col {
-    display: grid;
-    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    // row-gap: 1.5rem;
 }
 .image_col:nth-child(even) {
     margin-top: 4rem;
