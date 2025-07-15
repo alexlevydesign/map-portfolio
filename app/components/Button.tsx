@@ -20,7 +20,7 @@ import styles from "./button.module.scss";
 
 type ButtonProps = {
   children: React.ReactNode;
-  link?: string | { pathname: string; [key: string]: any };
+  link?: string | { pathname: string; [key: string]: string };
   variant?: 'primary' | 'ghost' | string;
 };
 
