@@ -7,42 +7,42 @@ import styles from "./image-scroll.module.scss";
 export default function ImageScroll() {
   const containerRef = useRef(null);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+//   useEffect(() => {
+//     const container = containerRef.current;
+//     if (!container) return;
 
-    const images = container.querySelectorAll(`.${styles.thumbnail_image}`);
-    let currentVisible = null;
+//     const images = container.querySelectorAll(`.${styles.thumbnail_image}`);
+//     let currentVisible = null;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let maxRatio = 0;
-        let mostVisible = null;
+//     const observer = new IntersectionObserver(
+//       (entries) => {
+//         let maxRatio = 0;
+//         let mostVisible = null;
 
-        // Find the entry with the largest visibility
-        entries.forEach((entry) => {
-          if (entry.intersectionRatio > maxRatio) {
-            maxRatio = entry.intersectionRatio;
-            mostVisible = entry.target;
-          }
-        });
+//         // Find the entry with the largest visibility
+//         entries.forEach((entry) => {
+//           if (entry.intersectionRatio > maxRatio) {
+//             maxRatio = entry.intersectionRatio;
+//             mostVisible = entry.target;
+//           }
+//         });
 
-        if (mostVisible && currentVisible !== mostVisible) {
-          // Remove .current from all
-          images.forEach((img) => img.classList.remove(styles.current));
-          // Add .current only to the most visible one
-          mostVisible.classList.add(styles.current);
-          currentVisible = mostVisible;
-        }
-      },
-      {
-        threshold: buildThresholdList(),
-      }
-    );
+//         if (mostVisible && currentVisible !== mostVisible) {
+//           // Remove .current from all
+//           images.forEach((img) => img.classList.remove(styles.current));
+//           // Add .current only to the most visible one
+//           mostVisible.classList.add(styles.current);
+//           currentVisible = mostVisible;
+//         }
+//       },
+//       {
+//         threshold: buildThresholdList(),
+//       }
+//     );
 
-    images.forEach((img) => observer.observe(img));
-    return () => observer.disconnect();
-  }, []);
+//     images.forEach((img) => observer.observe(img));
+//     return () => observer.disconnect();
+//   }, []);
 
   return (
     <div ref={containerRef} className={styles.image_grid}>

@@ -17,12 +17,3 @@ export default function Home() {
     </div>
   );
 }
-
-//Features
-
-// 1. Expand map on click
-
-// 2. Change map size on scroll
-
-//    1. Get % of viewport scrolled?
-//    2. 
