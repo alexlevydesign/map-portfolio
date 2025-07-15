@@ -1,0 +1,71 @@
+
+// .thumbnail_image, .small {
+//     width: 40%;
+//     object-fit: cover;
+// }
+
+
+
+// .current, .big {
+//     width: 60% !important;
+//     height: auto;
+// }
+
+
+// .thumbnail_image img{
+//     width: 100%;
+//     height: auto;
+//     object-fit: cover;
+// }
+
+// .thumbnail_image {
+//   display: inline-block;
+//   transition: transform 0.3s ease, box-shadow 0.3s ease;
+//   transform: scale(1);
+//   will-change: transform;
+//   z-index: 0;
+
+//   /* Add this */
+//   transform-origin: center center;
+
+//   /* Ensure scaling doesn't affect layout */
+//   position: relative;
+// }
+
+// .current {
+//   transform: scale(1.1);
+//   z-index: 1;
+//   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+//   /* Pull it above others visually */
+//   position: relative;
+// }
+
+
+.thumbnail_image {
+  display: block;
+  width: 40%;             // Fixed width inside column
+  height: auto;           // Consistent height
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+  transform-origin: center center;
+  will-change: transform;
+  z-index: 0;
+}
+
+.thumbnail_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.current {
+  transform: scale(1.1);   // Visually scale it, without changing layout
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 70%;
+}
+
