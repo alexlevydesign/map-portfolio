@@ -5,6 +5,8 @@ import HeroSection from "./components/HeroSection";
 // import ImageScroll from "./components/ImageScroll";
 import ImageGrid from "./components/ImageGrid";
 
+
+
 export default function Home() {
   return (
     <div className={styles.page}>

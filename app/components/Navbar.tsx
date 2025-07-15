@@ -21,20 +21,17 @@ export default function NavBar() {
                 </Link>
             <div className={styles.navlinks}>
                 <Button
-                children="Home"
                 link="/"
                 variant="ghost"
-                />
+                >Home</Button>
                 <Button
-                children="About me"
                 link="/about"
                 variant="ghost"
-                />
+                >About me</Button>
                 <Button
-                children="Contact"
                 link="/contact"
                 variant="primary"
-                />
+                >Contact</Button>
             </div>
             
         </header>
