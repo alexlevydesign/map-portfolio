@@ -2,7 +2,8 @@ import styles from "./page.module.scss";
 
 import NavBar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import ImageScroll from "./components/ImageScroll";
+// import ImageScroll from "./components/ImageScroll";
+import ImageGrid from "./components/ImageGrid";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
       <NavBar />
       <main className={styles.main}>
       <HeroSection />
-      {/* <h1>Mapping <b className={styles.bold}>impactful</b> stories and <i>striking</i> landscapes</h1> */}
-      <ImageScroll />
+      <ImageGrid />
+      {/* <ImageScroll /> */}
       </main>
     </div>
   );

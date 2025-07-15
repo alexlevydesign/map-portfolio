@@ -7,10 +7,62 @@
   color: var(--primary-blue);
 }
 
-.main h1 {
+.hero h1 {
+  font-weight: 600;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  
+
+}
+.hero {
+  // position: relative; // So absolutely positioned children are relative to this
+  overflow: hidden;
+  height: 1500px;
+}
+
+.hero_overlay {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  // height: 2000px;
+  width: 100%;
+  height: 100%;
+  z-index: 1; // Higher than image, lower than text
+  // background: #ffffff;
+  // background: linear-gradient(90deg, rgba(255, 255, 255, 1) 42%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, #AC977B 30%, rgba(255, 255, 255, 0));
+  pointer-events: none; // Optional: allows clicks to go through
+}
+
+.hero_text {
+  position: relative; // So it's above the overlay
+  z-index: 2;
+  // padding: 0 var(--desktop-margin);
   padding-right: var(--desktop-margin);
   padding-left: var(--desktop-margin);
+  max-width: 45%;
+}
+
+.hero_text p {
+  font-size: 1.5rem;
+  line-height: 130%;
+}
+
+.hero h1 {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 3rem;
+  // max-width: 100%;
+  height: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 160px; // Add 'px'
+  z-index: 0; // Behind everything
+  overflow: hidden;
+
+  
 }
