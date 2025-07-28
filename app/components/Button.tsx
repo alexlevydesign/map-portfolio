@@ -21,7 +21,7 @@ import styles from "./button.module.scss";
 type ButtonProps = {
   children: React.ReactNode;
   link?: string | { pathname: string; [key: string]: string };
-  variant?: 'primary' | 'ghost' | string;
+  variant?: 'primary' | 'ghost' | 'outline' | string;
 };
 
 export default function Button({ children, link = "", variant = "primary" }: ButtonProps) {
