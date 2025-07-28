@@ -1,8 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import Button from "./Button";
 
 import styles from "./image-grid.module.scss";
+
+// import { motion } from "motion/react"
 
 const imagesArray = [
     {
@@ -103,6 +105,7 @@ export default function ImageGrid() {
             <div className={styles.image_col}>
                 {imagesArray.map((img) => (
                     <div className={styles.thumbnail_image} key={img.src}>
+
                         <Image 
                             src={`/thumbnail-images/${img.src}`}
                             width={img.width}
