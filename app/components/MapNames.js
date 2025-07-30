@@ -1,5 +1,5 @@
 // grand-canyon.png
-// alaska.png
+// alaska.jpeg
 // light-map.jpeg
 // switzerland.png
 // far-from-home.png

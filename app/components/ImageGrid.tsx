@@ -17,7 +17,7 @@ const imagesArray = [
         link: "/",
     },
     {
-        src: "alaska.png",
+        src: "alaska.jpeg",
         width: 2000,
         height: 2000,
         alt: "Alaska map",
