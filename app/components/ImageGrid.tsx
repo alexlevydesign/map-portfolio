@@ -71,7 +71,7 @@ const imagesArray = [
         link: "/"
     },
     {
-        src: "denver.png",
+        src: "denver.jpeg",
         width: 2000,
         height: 2000,
         alt: "Denver map",

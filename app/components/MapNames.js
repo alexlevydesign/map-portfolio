@@ -5,6 +5,6 @@
 // far-from-home.png
 // usa.png
 // ohio.png
-// denver.png
+// denver.jpeg
 // alaska-transport.png
 // yellowstone.png
