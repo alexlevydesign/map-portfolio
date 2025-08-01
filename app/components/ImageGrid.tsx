@@ -4,7 +4,7 @@ import Image from "next/image";
 // import Link from "next/link";
 import Button from "./Button";
 
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 
 import styles from "./image-grid.module.scss";
 
@@ -235,7 +235,7 @@ const imagesArray = [
 export default function ImageGrid() {
   const [activeIndex, setActiveIndex] = useState(0); // First open by default
 
-  const handleImageClick = (index) => {
+  const handleImageClick = (index: SetStateAction<number>) => {
     if (index === activeIndex) return; // prevent closing on clicking already open image
     setActiveIndex(index);
   };
