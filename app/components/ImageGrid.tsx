@@ -1,6 +1,10 @@
+'use client'
+
 import Image from "next/image";
 // import Link from "next/link";
 import Button from "./Button";
+
+import { useState } from 'react';
 
 import styles from "./image-grid.module.scss";
 
@@ -99,126 +103,173 @@ const imagesArray = [
     },
 ]
 
-export default function ImageGrid() {
-    return (
-        <div className={styles.image_grid}>
-            <div className={styles.image_col}>
-                {imagesArray.map((img) => (
-                    <div className={styles.thumbnail_image} key={img.src}>
+// export default function ImageGrid() {
+//     const [isOn, setIsOn] = useState(false);
+//     //   const [showMapInfo, setShowMapInfo] = useState(false);
+//     return (
+//         <div className={styles.image_grid}>
+//             <div className={styles.image_col}>
+//                 {imagesArray.map((img) => (
+//     //                 <div className={`${styles.thumbnail_image} ${isOn ? styles.on : styles.off}`}
+//     //   onClick={() => document.querySelector(".map_info").setIsOn(!isOn)} >
+//     <div className={styles.thumbnail_image}
+//         onClick={() => setIsOn(!isOn)}>
 
-                        <Image 
-                            src={`/thumbnail-images/${img.src}`}
-                            width={img.width}
-                            height={img.height}
-                            alt={img.alt}
-                        />
-                        <div className={styles.map_info}>
-                            <h2>{img.title}</h2>
-                            <p>{img.description}</p>
-                            <div className={styles.button_container}>
-                                <Button
-                                link="/"
-                                variant="primary"
-                                >More info
-                                </Button>
-                                <Button
-                                link="/"
-                                variant="outline"
-                                >Get in touch
-                                </Button>
-                            </div>
+//                         <Image 
+//                             src={`/thumbnail-images/${img.src}`}
+//                             width={img.width}
+//                             height={img.height}
+//                             alt={img.alt}
+//                         />
+//                        <div className={`${styles.map_info} ${isOn ? styles.on : styles.off}`}>
+//                             <h2>{img.title}</h2>
+//                             <p>{img.description}</p>
+//                             <div className={styles.button_container}>
+//                                 <Button
+//                                 link="/"
+//                                 variant="primary"
+//                                 >More info
+//                                 </Button>
+//                                 <Button
+//                                 link="/"
+//                                 variant="outline"
+//                                 >Get in touch
+//                                 </Button>
+//                             </div>
                             
 
-                        </div>
-                    </div>  
-                ))}
-            </div>
-            {/* <div className={styles.image_col}>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/grand-canyon.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/alaska.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/light-map.jpeg"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/switzerland.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/far-from-home.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-            </div>
-            <div className={styles.image_col}>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/usa.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/ohio.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/denver.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/alaska-transport.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-                <div className={styles.thumbnail_image}>
-                    <Image
-                        src="/thumbnail-images/yellowstone.png"
-                        width={2000}
-                        height={2000}
-                        alt="Image"
-                    ></Image>
-                </div>
-            </div> */}
+//                         </div>
+//                     </div>  
+//                 ))}
+//             </div>
+//             {/* <div className={styles.image_col}>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/grand-canyon.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/alaska.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/light-map.jpeg"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/switzerland.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/far-from-home.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//             </div>
+//             <div className={styles.image_col}>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/usa.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/ohio.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/denver.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/alaska-transport.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//                 <div className={styles.thumbnail_image}>
+//                     <Image
+//                         src="/thumbnail-images/yellowstone.png"
+//                         width={2000}
+//                         height={2000}
+//                         alt="Image"
+//                     ></Image>
+//                 </div>
+//             </div> */}
             
            
-        </div>
-    )
+//         </div>
+//     )
+// }
+
+export default function ImageGrid() {
+  const [activeIndex, setActiveIndex] = useState(0); // First open by default
+
+  const handleImageClick = (index) => {
+    if (index === activeIndex) return; // prevent closing on clicking already open image
+    setActiveIndex(index);
+  };
+
+  return (
+    <div className={styles.image_grid}>
+      <div className={styles.image_col}>
+        {imagesArray.map((img, index) => {
+          const isActive = index === activeIndex;
+          return (
+            <div
+              key={index}
+              className={`${styles.thumbnail_image} ${isActive ? styles.expanded : styles.collapsed}`}
+            >
+              <Image
+                src={`/thumbnail-images/${img.src}`}
+                width={img.width}
+                height={img.height}
+                alt={img.alt}
+                onClick={() => handleImageClick(index)}
+              />
+              <div className={`${styles.map_info} ${isActive ? styles.on : styles.off}`}>
+                <h2>{img.title}</h2>
+                <p>{img.description}</p>
+                <div className={styles.button_container}>
+                  <Button link="/" variant="primary">More info</Button>
+                  <Button link="/" variant="outline">Get in touch</Button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
+
