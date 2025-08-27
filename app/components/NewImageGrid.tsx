@@ -8,8 +8,8 @@ import Image from 'next/image';
 export default function NewImageGrid() {
   // Define the props object for first three image grid
   const firstEqualImagesProps = {
-    src1: './usa.png',
-    src2: './yellowstone.png',
+    src1: 'usa.png',
+    src2: 'yellowstone.png',
     alt1: '',
     alt2: '',
     layout: 'vertical' as const
@@ -17,8 +17,8 @@ export default function NewImageGrid() {
 
   // Define the props object for second 3 image grid
   const secondEqualImagesProps = {
-    src1: './grand-canyon.png',
-    src2: './light-map.jpeg',
+    src1: 'grand-canyon.png',
+    src2: 'light-map.jpeg',
     alt1: '',
     alt2: '',
     layout: 'vertical' as const
@@ -27,14 +27,14 @@ export default function NewImageGrid() {
   return (
     <div className={styles.container}>
       <EqualImages 
-        src1={'./alaska.jpeg'}
-        src2={'./denver.jpeg'}
+        src1={'alaska.jpeg'}
+        src2={'denver.jpeg'}
         alt1={''}
         alt2={''}
         layout={'horizontal'} />
 
       <ThreeImages
-        srcBig={'./ohio.png'}
+        srcBig={'ohio.png'}
         altBig=''
         side='left'
         equalImagesProps={firstEqualImagesProps}
@@ -48,7 +48,7 @@ export default function NewImageGrid() {
       />
 
       <ThreeImages
-        srcBig={'./far-from-home.png'}
+        srcBig={'far-from-home.png'}
         altBig=''
         side='right'
         equalImagesProps={secondEqualImagesProps}
