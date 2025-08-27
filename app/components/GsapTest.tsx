@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 
-import Button from "./Button";
-
 import { gsap } from "gsap";
 
 import { GSDevTools } from "gsap/GSDevTools";
