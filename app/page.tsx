@@ -5,6 +5,10 @@ import HeroSection from "./components/HeroSection";
 // import ImageScroll from "./components/ImageScroll";
 import ImageGrid from "./components/ImageGrid";
 
+import NewImageGrid from "./components/NewImageGrid";
+
+import GsapTest from "./components/GsapTest";
+
 
 
 export default function Home() {
@@ -13,7 +17,9 @@ export default function Home() {
       <NavBar />
       <main className={styles.main}>
       <HeroSection />
-      <ImageGrid />
+      <NewImageGrid />
+      {/* <ImageGrid /> */}
+      {/* <GsapTest /> */}
       </main>
     </div>
   );
