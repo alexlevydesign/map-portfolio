@@ -30,6 +30,13 @@ export default function NewImageGrid() {
         alt1={''}
         alt2={''}
         layout={'horizontal'} />
+      
+      <EqualImages 
+        src1={'ohio.png'}
+        src2={'far-from-home.png'}
+        alt1={''}
+        alt2={''}
+        layout={'horizontal'} />
 
       <ThreeImages
         srcBig={'far-from-home.png'}
