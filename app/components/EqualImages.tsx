@@ -1,5 +1,5 @@
 import styles from './equal-images.module.scss';
-import Image from 'next/image';
+import ImageComponent from './ImageComponent';
 
 interface EqualImagesProps {
   src1: string;
@@ -19,8 +19,8 @@ export default function EqualImages({
   return (
     <div className={`${styles.container} ${styles[layout]}`}>
       <div className={styles.imageWrapper}>
-        <Image 
-          src={`/thumbnail-images/${src1}`}
+        <ImageComponent 
+          src={`${src1}`}
           alt={alt1}
           width={1920}
           height={1080}
@@ -28,8 +28,8 @@ export default function EqualImages({
       </div>
 
       <div className={styles.imageWrapper}>
-        <Image 
-          src={`/thumbnail-images/${src2}`}
+        <ImageComponent 
+          src={`${src2}`}
           alt={alt2}
           width={1920}
           height={1080}

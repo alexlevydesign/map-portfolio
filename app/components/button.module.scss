@@ -1,17 +1,29 @@
+.button_primary, .button_ghost, .button_outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+}
 
 .button_primary {
 	border: none;
 	background-color: #2156a6;
 	color: #fff;
-	padding: 1rem 1.75rem;
+	padding: 1.1rem 1.75rem;
 	font-weight: 600;
 	font-size: 1rem;
 	border-radius: .5rem;
 	text-align: center;
 	text-wrap: balance;
     width: fit-content;
-    height:min-content;
+    height:fit-content;
     text-decoration: none;
     display: block;
 	// text-align: center;
@@ -29,6 +41,7 @@
 }
 .button_outline {
 	border: solid #2156a6 2px;
+	box-sizing: border-box;
 	// background-color: #2156a6;
 	color: #2156a6;
 	padding: 1rem 1.75rem;
@@ -38,7 +51,7 @@
 	text-align: center;
 	text-wrap: balance;
     width: fit-content;
-    height:min-content;
+    // height:min-content;
     text-decoration: none;
     display: block;
 }

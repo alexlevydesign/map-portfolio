@@ -1,6 +1,7 @@
 import styles from './three-images.module.scss';
 import Image from 'next/image';
 import EqualImages from './EqualImages';
+import ImageComponent from './ImageComponent';
 
 interface ThreeImagesProps {
   srcBig: string;
@@ -24,8 +25,8 @@ export default function ThreeImages({
   return (
     <div className={`${styles.container} ${styles[side]}`}>
       <div className={styles.imageWrapper}>
-        <Image 
-          src={`/thumbnail-images/${srcBig}`}
+        <ImageComponent 
+          src={`${srcBig}`}
           alt={altBig}
           width={1920}
           height={1080}
