@@ -1,9 +1,7 @@
 import styles from './new-image-grid.module.scss';
-
 import EqualImages from './EqualImages';
 import ThreeImages from './ThreeImages';
-
-import Image from 'next/image';
+import ImageComponent from './ImageComponent';
 
 export default function NewImageGrid() {
   // Define the props object for first three image grid
@@ -34,21 +32,19 @@ export default function NewImageGrid() {
         layout={'horizontal'} />
 
       <ThreeImages
-        srcBig={'ohio.png'}
+        srcBig={'far-from-home.png'}
         altBig=''
         side='left'
         equalImagesProps={firstEqualImagesProps}
       />
 
-      <Image
-        src={'/thumbnail-images/switzerland.png'}
+      <ImageComponent
+        src={'switzerland.png'}
         alt={''}
-        width={1920}
-        height={1080}
       />
 
       <ThreeImages
-        srcBig={'far-from-home.png'}
+        srcBig={'ohio.png'}
         altBig=''
         side='right'
         equalImagesProps={secondEqualImagesProps}
