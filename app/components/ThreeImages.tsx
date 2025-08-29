@@ -1,5 +1,4 @@
 import styles from './three-images.module.scss';
-import Image from 'next/image';
 import EqualImages from './EqualImages';
 import ImageComponent from './ImageComponent';
 

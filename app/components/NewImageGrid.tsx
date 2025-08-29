@@ -2,10 +2,6 @@ import styles from './new-image-grid.module.scss';
 
 import EqualImages from './EqualImages';
 import ThreeImages from './ThreeImages';
-import MapActionBar from './MapActionBar';
-
-import Image from 'next/image';
-import ImageComponent from './ImageComponent';
 
 export default function NewImageGrid() {
   // Define the props object for first three image grid
