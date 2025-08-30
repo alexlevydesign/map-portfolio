@@ -1,0 +1,204 @@
+{
+    "maps": [
+        {
+            "map-index": 0,
+            "id": "denver-relief-map",
+            "title": "Denver map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "denver.jpeg",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map of Denver",
+                    "type": "main"
+                }
+                
+            ]
+        },
+        
+       {
+           "map-index": 1,
+            "id": "alaska-relief-map",
+            "title": "Alaska map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "alaska.jpeg",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map of Alaska",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 2,
+            "id": "ohio-election-education-map",
+            "title": "Ohio election map",
+            "description": "Lorem ipsum",
+            "map-type": "Data visualization", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "ohio.png",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Map comparing the vote shift in Ohio between 2016 and 2020 presidential elections with educational attainment levels.",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 3,
+            "id": "switzerland-relief-map",
+            "title": "Switzerland map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "switzerland.png",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map of Switzerland",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 4,
+            "id": "usa-light-map",
+            "title": "USA light map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "light-map.jpeg",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map showing nighttime lights of the USA.",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 5,
+            "id": "su-football-travels-map",
+            "title": "Syracuse football travels map",
+            "description": "Lorem ipsum",
+            "map-type": "Data visualization", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "far-from-home.png",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Map showing the travels of the SU football team in 1989 from Syracuse to Japan.",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 6,
+            "id": "yellowstone-relief-map",
+            "title": "Yellowstone map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "yellowstone.png",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map of Yellowstone National Park.",
+                    "type": "main"
+                }
+                
+            ]
+        },
+
+        {
+           "map-index": 7,
+            "id": "grand-canyon-relief-map",
+            "title": "Grand canyon map",
+            "description": "Lorem ipsum",
+            "map-type": "Stylized relief", 
+            "links": [
+                {
+                    "buy": "/",
+                    "expand": "/"
+                    
+                }
+            ],
+            "images": [
+                {
+                    "src": "grand-canyon.png",
+                    "width": 1920,
+                    "height": 1080,
+                    "alt": "Relief map of the Grand Canyon.",
+                    "type": "main"
+                }
+                
+            ]
+        }
+    ]
+}
+

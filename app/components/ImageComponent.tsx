@@ -4,7 +4,6 @@ import Image from 'next/image';
 import styles from './image-component.module.scss';
 import MapActionBar from './MapActionBar';
 import { useState } from 'react';
-// import { div } from 'motion/react-client';
 
 interface ImageComponentProps {
   src: string;
