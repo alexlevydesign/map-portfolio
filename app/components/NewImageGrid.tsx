@@ -1,10 +1,9 @@
 import styles from './new-image-grid.module.scss';
 import EqualImages from './EqualImages';
-import ThreeImages from './ThreeImages';
 
 import mapsData from './maps.json';
 
-const getMapById = (maps: any[], id: string) => {
+const getMapById = (maps: string[], id: string) => {
   return maps.find(map => map.id === id)?.images[0] || { src: '', alt: '' };
 };
 
