@@ -12,3 +12,12 @@
   color: unset;
   text-decoration: unset;
 }
+
+
+@media screen and (max-width: 1300px) {
+    :root {
+        --desktop-margin: 2rem;
+    }
+
+    
+}

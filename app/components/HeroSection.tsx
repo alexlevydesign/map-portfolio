@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className={styles.hero}>
       <div className={styles.hero_layer}>
         <Image
-          src="/thumbnail-images/grand-canyon-no-text.png"
+          src="/hero-mockup-v3.jpg"
           width={1920}
           height={1080}
           alt="Image"
@@ -17,11 +17,11 @@ export default function HeroSection() {
           <h1>
             Mapping <b className={styles.bold}>impactful</b> stories and <i>striking</i> landscapes
           </h1>
-          <p>
+          {/* <p>
             I design maps that tell unique stories and provide normally unseen points of view, from
             mapping the relationship between voting and education, to visualizing the terrain of the
             Swiss Alps.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

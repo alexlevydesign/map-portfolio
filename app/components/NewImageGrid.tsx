@@ -1,57 +1,75 @@
 import styles from './new-image-grid.module.scss';
-
 import EqualImages from './EqualImages';
 import ThreeImages from './ThreeImages';
 
+import mapsData from './maps.json';
+
+const getMapById = (maps: any[], id: string) => {
+  return maps.find(map => map.id === id)?.images[0] || { src: '', alt: '' };
+};
+
 export default function NewImageGrid() {
-  // Define the props object for first three image grid
-  const firstEqualImagesProps = {
-    src1: 'usa.png',
-    src2: 'yellowstone.png',
-    alt1: '',
-    alt2: '',
-    layout: 'vertical' as const
+  const { maps } = mapsData;
+
+  // First EqualImages props
+  const topEqualImagesProps = {
+    src1: getMapById(maps, 'denver-relief-map').src,
+    alt1: getMapById(maps, 'denver-relief-map').alt,
+
+    src2: getMapById(maps, 'alaska-relief-map').src,
+    alt2: getMapById(maps, 'alaska-relief-map').alt,
+
+    layout: 'horizontal' as const
   };
 
-  // Define the props object for second 3 image grid
+  // Props for first ThreeImages component
+  const firstEqualImagesProps = {
+    src1: getMapById(maps, 'switzerland-relief-map').src,
+    alt1: getMapById(maps, 'switzerland-relief-map').alt,
+
+    src2: getMapById(maps, 'usa-light-map').src,
+    alt2: getMapById(maps, 'usa-light-map').alt,
+
+    layout: 'horizontal' as const
+  };
+
+  // Props for second ThreeImages component
   const secondEqualImagesProps = {
-    src1: 'grand-canyon.png',
-    src2: 'light-map.jpeg',
-    alt1: '',
-    alt2: '',
-    layout: 'vertical' as const
+    src1: getMapById(maps, 'yellowstone-relief-map').src,
+    alt1: getMapById(maps, 'yellowstone-relief-map').alt,
+
+    src2: getMapById(maps, 'grand-canyon-relief-map').src,
+    alt2: getMapById(maps, 'grand-canyon-relief-map').alt,
+
+    layout: 'horizontal' as const
   };
 
   return (
     <div className={styles.container}>
+      <EqualImages {...topEqualImagesProps} />
+      <EqualImages {...firstEqualImagesProps} />
+      <EqualImages {...secondEqualImagesProps} />
 
-      <EqualImages 
-        src1={'alaska.jpeg'}
-        src2={'denver.jpeg'}
-        alt1={''}
-        alt2={''}
-        layout={'horizontal'} />
-
-      <ThreeImages
-        srcBig={'ohio.png'}
-        altBig=''
+      {/* <ThreeImages
+        srcBig={getMapById(maps, 'ohio-election-education-map').src}
+        altBig={getMapById(maps, 'ohio-election-education-map').alt}
         side='left'
         equalImagesProps={firstEqualImagesProps}
-      />
+      /> */}
 
       {/* <ImageComponent
-        src={'switzerland.png'}
-        alt={''}
+        src={getMapById(maps, 'switzerland-relief-map').src}
+        alt={getMapById(maps, 'switzerland-relief-map').alt}
         width={1920}
         height={1080}
       /> */}
 
-      <ThreeImages
-        srcBig={'far-from-home.png'}
-        altBig=''
+      {/* <ThreeImages
+        srcBig={getMapById(maps, 'su-football-travels-map').src}
+        altBig={getMapById(maps, 'su-football-travels-map').alt}
         side='right'
         equalImagesProps={secondEqualImagesProps}
-      />
+      /> */}
     </div>
   );
 }

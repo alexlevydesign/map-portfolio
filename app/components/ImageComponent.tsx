@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import styles from './image-component.module.scss';
 import MapActionBar from './MapActionBar';
+import Modal from './Modal';
 import { useState } from 'react';
 
 interface ImageComponentProps {
@@ -34,6 +35,16 @@ export default function ImageComponent({
   height = 1080
 }: ImageComponentProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleExpand = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    setIsHovered(false);
+  };
 
   return (
     <div 
@@ -46,15 +57,23 @@ export default function ImageComponent({
         alt={alt}
         width={width}
         height={height}
-        style={{
-          width: '100%',
-          height: 'auto',
-        }}
         priority
       />
       <div className={`${styles.MapActionBarContainer} ${isHovered ? styles.visible : ''}`}>
-        <MapActionBar />
+        <MapActionBar onExpand={handleExpand} />
       </div>
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={handleModalClose}
+      >
+        <Image
+          src={`/thumbnail-images/${src}`}
+          alt={alt}
+          width={width}
+          height={height}
+          priority
+        />
+      </Modal>
     </div>
   );
 }

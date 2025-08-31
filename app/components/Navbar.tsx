@@ -12,7 +12,7 @@ export default function NavBar() {
             <Link href="/" className={styles.logo_area}>
                 <Image
                     src="/personal-logo.svg"
-                    width={100}
+                    width={80}
                     height={120}
                     alt="Alex Levy"
                 />
@@ -20,18 +20,18 @@ export default function NavBar() {
                 <p>Maps</p>
                 </Link>
             <div className={styles.navlinks}>
-                <Button
+                {/* <Button
                 link="/"
                 variant="ghost"
-                >Home</Button>
-                <Button
+                >Home</Button> */}
+                {/* <Button
                 link="/about"
                 variant="ghost"
-                >About me</Button>
+                >Contact</Button> */}
                 <Button
                 link="/contact"
                 variant="primary"
-                >Contact</Button>
+                >Get in touch</Button>
             </div>
             
         </header>

@@ -1,7 +1,9 @@
 .button_primary, .button_ghost, .button_outline {
-    display: inline-flex;
+    display: flex;
+	flex-direction: row-reverse;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
+	
 }
 
 .icon {
@@ -10,6 +12,8 @@
     justify-content: center;
     width: 1.25rem;
     height: 1.25rem;
+	fill: #2156a6;
+	scale: 1.6;
 }
 
 .button_primary {
@@ -25,7 +29,7 @@
     width: fit-content;
     height:fit-content;
     text-decoration: none;
-    display: block;
+    // display: block;
 	// text-align: center;
 }
 .button_ghost {
@@ -53,7 +57,7 @@
     width: fit-content;
     // height:min-content;
     text-decoration: none;
-    display: block;
+    // display: block;
 }
 .button_ghost:hover {
 	text-decoration: underline;

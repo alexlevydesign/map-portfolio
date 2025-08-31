@@ -11,7 +11,7 @@
 /* === HERO CONTAINER === */
 .hero {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 /* === GRID LAYERED HERO === */
@@ -46,7 +46,7 @@
   height: 100%;
   z-index: 1;
   // background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  background: linear-gradient(to right, #AC977B 30%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, #AC977B 0%, rgba(255, 255, 255, 0));
   pointer-events: none;
 }
 
@@ -65,7 +65,7 @@
 
 .hero_text h1 {
   font-weight: 600;
-  font-size: 4.4rem;
+  font-size: 3.7rem;
   // margin-bottom: 2rem;
 }
 
@@ -74,4 +74,11 @@
   line-height: 130%;
   font-weight: 400;
   max-width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .hero_text h1 {
+    font-size: 2rem;
+  }
+  
 }

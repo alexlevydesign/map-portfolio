@@ -1,6 +1,6 @@
 .MapActionBar {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     // gap: 1rem;
     align-items: center;
     padding-bottom: 1.5rem;
@@ -8,14 +8,40 @@
     // width: 100%;
     margin-left: 2rem;
     margin-right: 2rem;
+    justify-content: right;
+    gap: 2rem;
 }
 
-.icon {
-    scale: 1.6;
-}
+// .icon {
+//     scale: 1.6;
+// }
 
 .MainCTAButtons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .MapActionBar {
+        justify-content: left;
+        // gap: 2rem;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
+        margin-left: 0;
+        
+
+    }
+
+    .icon {
+        // scale: 1.2;
+
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .ExpandButton {
+        display: none !important;
+    }
 }
