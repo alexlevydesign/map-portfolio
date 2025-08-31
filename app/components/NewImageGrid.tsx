@@ -9,13 +9,13 @@ type MapData = { id: string; images: MapImage[] };
 const getMapById = (maps: MapData[], id: string): MapImage => {
   return maps.find(map => map.id === id)?.images[0] || { src: '', alt: '' };
 };
-type EqualImagesProps = {
-  src1: string;
-  alt1: string;
-  src2: string;
-  alt2: string;
-  layout: 'horizontal' | 'vertical';
-};
+// type EqualImagesProps = {
+//   src1: string;
+//   alt1: string;
+//   src2: string;
+//   alt2: string;
+//   layout: 'horizontal' | 'vertical';
+// };
 export default function NewImageGrid() {
   const { maps } = mapsData;
 
