@@ -1,6 +1,8 @@
 import styles from "./hero-section.module.scss";
 import Image from "next/image";
 
+import Button from "./Button";
+
 export default function HeroSection() {
   return (
     <div className={styles.hero}>
@@ -17,6 +19,8 @@ export default function HeroSection() {
           <h1>
             Mapping <b className={styles.bold}>impactful</b> stories and <i>striking</i> landscapes
           </h1>
+          <Button>Request custom map</Button>
+
           {/* <p>
             I design maps that tell unique stories and provide normally unseen points of view, from
             mapping the relationship between voting and education, to visualizing the terrain of the
