@@ -23,7 +23,7 @@ import styles from "./button.module.scss";
 type ButtonProps = {
   children?: React.ReactNode;
   link?: string | { pathname: string; [key: string]: string };
-  variant?: 'primary' | 'ghost' | 'outline' | string;
+  variant?: 'primary' | 'ghost' | 'outline' | 'secondary' | string;
   icon?: React.ReactNode;
   onClick?: () => void;
 };

@@ -59,6 +59,24 @@
     text-decoration: none;
     // display: block;
 }
+
+.button_secondary {
+	border: solid #2156a6 1px;
+	background-color: #fff;
+	box-sizing: border-box;
+	// background-color: #2156a6;
+	color: #2156a6;
+	padding: 1rem 1.75rem;
+	font-weight: 600;
+	font-size: 1rem;
+	border-radius: .5rem;
+	text-align: center;
+	text-wrap: balance;
+    width: fit-content;
+    // height:min-content;
+    text-decoration: none;
+    // display: block;
+}
 .button_ghost:hover {
 	text-decoration: underline;
 	color: #00005e;
@@ -72,6 +90,11 @@
 	border-color: #00005e;
 	transition: .1s ease-in-out;
 	color: #00005e;
+}
+.button_secondary:hover {
+	background-color: #00005e;
+	transition: .3s ease-out;
+	color: #fff;
 }
 
 
