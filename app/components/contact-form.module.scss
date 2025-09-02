@@ -3,7 +3,7 @@
     flex-direction: row;
     // width: 100%;
     // justify-content: space-between;
-    gap: 2rem;
+    // gap: 10rem;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -16,6 +16,12 @@
     flex-direction: column;
     gap: 1.3rem;
 }
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding-right: 7rem;
+}
 
 .ContactFormContainer h2 {
     font-size: 4rem;
@@ -25,6 +31,103 @@
 
 .ContactFormContainer p {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 130%;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.input, .textArea {
+    // height: 3.25rem;
+    padding: .75rem;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.textArea {
+    min-height: 6rem;
+    resize: vertical;
+
+}
+
+
+
+.InputContainer label {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #464646;
+}
+
+.radioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radioInput {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    accent-color: #2156a6;
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radioLabel span {
+    text-transform: initial;
+    font-weight: 400;
+}
+
+// button style
+
+.button_primary, .button_ghost, .button_outline {
+    display: flex;
+	flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+	
+}
+.button_primary {
+	border: none;
+	background-color: #2156a6;
+	color: #fff;
+	padding: 1.1rem 1.75rem;
+	font-weight: 600;
+	font-size: 1rem;
+	border-radius: .5rem;
+	text-align: center;
+	text-wrap: balance;
+    width: fit-content;
+    height:fit-content;
+    text-decoration: none;
+    // display: block;
+	// text-align: center;
+}
+.button_primary:hover {
+	background-color: #00005e;
+	transition: .1s ease-in-out;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .ContactFormContainer, .textContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .ContactFormContainer {
+        gap: 2.5rem;
+    }
+    .textContainer {
+        padding-right: 0;
+    }
 }
