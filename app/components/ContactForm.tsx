@@ -5,8 +5,6 @@
 
 import styles from "./contact-form.module.scss";
 
-import Button from "./Button";
-
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -17,7 +15,7 @@ function ContactForm() {
     <div className={styles.ContactFormContainer}>
         <div className={styles.textContainer}>
             <h2>Get in touch</h2>
-            <p>Maps aren't just pretty pictures. They tell stories, ones that can't be explained in words. A map can help you frame a memory or interest in a new light, and I can help you do just that!</p>
+            <p>Maps aren&#39;t just pretty pictures. They tell stories, ones that can&#39;t be explained in words. A map can help you frame a memory or interest in a new light, and I can help you do just that!</p>
             </div>
         <form onSubmit={handleSubmit}>
             <div className={styles.InputContainer}>
