@@ -16,7 +16,7 @@ function ContactForm() {
         <div className={styles.textContainer}>
             <h2>Get in touch</h2>
             <p>Maps aren&#39;t just pretty pictures. They tell stories, ones that can&#39;t be explained in words. A map can help you frame a memory or interest in a new light, and I can help you do just that!</p>
-            <p>If you would like to request a custom map, or if you have any questions, please don't hesitate to reach out!</p>
+            <p>If you would like to request a custom map, or if you have any questions, please don&#39;'t hesitate to reach out!</p>
             </div>
         <form onSubmit={handleSubmit}>
             <div className={styles.InputContainer}>
