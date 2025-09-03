@@ -1,3 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.scss";
@@ -22,6 +24,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable}`}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-2021TZ0HRL" />
     </html>
   );
 }
