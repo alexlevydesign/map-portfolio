@@ -24,16 +24,16 @@ export default function NewImageGrid() {
     src1: getMapById(maps, 'denver-relief-map').src,
     alt1: getMapById(maps, 'denver-relief-map').alt,
 
-    src2: getMapById(maps, 'alaska-relief-map').src,
-    alt2: getMapById(maps, 'alaska-relief-map').alt,
+    src2: getMapById(maps, 'switzerland-relief-map').src,
+    alt2: getMapById(maps, 'switzerland-relief-map').alt,
 
     layout: 'horizontal' as const
   };
 
   // Props for first ThreeImages component
   const firstEqualImagesProps = {
-    src1: getMapById(maps, 'switzerland-relief-map').src,
-    alt1: getMapById(maps, 'switzerland-relief-map').alt,
+    src1: getMapById(maps, 'alaska-relief-map').src,
+    alt1: getMapById(maps, 'alaska-relief-map').alt,
 
     src2: getMapById(maps, 'usa-light-map').src,
     alt2: getMapById(maps, 'usa-light-map').alt,

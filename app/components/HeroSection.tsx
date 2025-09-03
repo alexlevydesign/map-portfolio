@@ -8,7 +8,7 @@ export default function HeroSection() {
     <div className={styles.hero}>
       <div className={styles.hero_layer}>
         <Image
-          src="/hero-mockup-v3.jpg"
+          src="/hero-mockup-v4.jpg"
           width={1920}
           height={1080}
           alt="Image"
