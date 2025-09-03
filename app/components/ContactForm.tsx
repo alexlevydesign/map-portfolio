@@ -12,7 +12,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xgvllabv");
   
   return (
-    <div className={styles.ContactFormContainer}>
+    <div className={styles.ContactFormContainer} id="contact">
         <div className={styles.textContainer}>
             <h2>Get in touch</h2>
             <p>Maps aren&#39;t just pretty pictures. They tell stories, ones that can&#39;t be explained in words. A map can help you frame a memory or interest in a new light, and I can help you do just that!</p>

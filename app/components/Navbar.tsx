@@ -29,7 +29,7 @@ export default function NavBar() {
                 variant="ghost"
                 >Contact</Button> */}
                 <Button
-                link="/contact"
+                link="#contact"
                 variant="primary"
                 >Get in touch</Button>
             </div>

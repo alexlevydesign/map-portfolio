@@ -19,7 +19,7 @@ export default function HeroSection() {
           <h1>
             Mapping <b className={styles.bold}>impactful</b> stories and <i>striking</i> landscapes
           </h1>
-          <Button>Request custom map</Button>
+          <Button link="#contact">Request custom map</Button>
 
           {/* <p>
             I design maps that tell unique stories and provide normally unseen points of view, from
