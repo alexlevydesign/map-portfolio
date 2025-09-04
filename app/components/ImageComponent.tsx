@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './image-component.module.scss';
 import MapActionBar from './MapActionBar';
 import Modal from './Modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface ImageComponentProps {
   src: string;
@@ -40,6 +40,18 @@ export default function ImageComponent({
 }: ImageComponentProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 1100);
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   const handleExpand = () => {
     setIsModalOpen(true);
