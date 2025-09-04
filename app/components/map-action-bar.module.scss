@@ -60,6 +60,22 @@
     }
 }
 
+@media screen and (max-width: 930px) {
+    .ExpandButton {
+        display: none !important;
+    }
+    .MainCTAButtons a {
+        width: 100% !important;
+    }
+    .MainCTAButtons {
+        width: 100%;
+    }
+    .MapActionBar {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .MainCTAButtons {
         flex-direction: column !important;

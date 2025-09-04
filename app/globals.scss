@@ -23,9 +23,22 @@ html {
     :root {
         --desktop-margin: 2rem;
     }
-
-    
+    h1 {
+        font-size: 3rem !important;
+    }
 }
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.7rem !important;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
     h2 {
