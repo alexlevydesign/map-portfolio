@@ -1,6 +1,5 @@
 import styles from './new-image-grid.module.scss';
 import EqualImages from './EqualImages';
-import Button from './Button';
 
 import mapsData from './maps.json';
 
