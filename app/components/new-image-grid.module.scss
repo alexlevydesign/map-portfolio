@@ -52,3 +52,11 @@
 //     }
     
 // }
+
+.buttonRow {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}

@@ -1,9 +1,9 @@
-.button_primary, .button_ghost, .button_outline {
+.button_primary, .button_ghost, .button_outline, .button_secondary {
     display: flex;
-	flex-direction: row-reverse;
     align-items: center;
-    gap: 2rem;
-	
+    justify-content: space-between;
+    gap: 1rem;
+	width: initial;
 }
 
 .icon {
@@ -61,7 +61,7 @@
 }
 
 .button_secondary {
-	border: solid #2156a6 1px;
+	border: solid #2156a6 2px;
 	background-color: #fff;
 	box-sizing: border-box;
 	// background-color: #2156a6;
@@ -95,6 +95,24 @@
 	background-color: #00005e;
 	transition: .3s ease-out;
 	color: #fff;
+}
+
+.buttonText {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.divider {
+    width: 1px;
+    height: 1.5rem;
+    background-color: currentColor;
+    opacity: 0.3;
+}
+
+.price {
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 

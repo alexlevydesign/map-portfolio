@@ -7,6 +7,8 @@ interface EqualImagesProps {
   alt1?: string;
   alt2?: string;
   layout?: 'horizontal' | 'vertical';
+  pricing1?: { digital: string; printed: string };
+  pricing2?: { digital: string; printed: string };
 }
 
 export default function EqualImages({ 
@@ -14,7 +16,9 @@ export default function EqualImages({
   src2, 
   alt1 = '', 
   alt2 = '', 
-  layout = 'horizontal'
+  layout = 'horizontal',
+  pricing1,
+  pricing2
 }: EqualImagesProps) {
   return (
     <div className={`${styles.container} ${styles[layout]}`}>
@@ -24,6 +28,8 @@ export default function EqualImages({
           alt={alt1}
           width={1920}
           height={1080}
+          digitalPrice={pricing1?.digital}
+          printPrice={pricing1?.printed}
         />
       </div>
 
@@ -33,6 +39,8 @@ export default function EqualImages({
           alt={alt2}
           width={1920}
           height={1080}
+          digitalPrice={pricing2?.digital}
+          printPrice={pricing2?.printed}
         />
       </div>
     </div>

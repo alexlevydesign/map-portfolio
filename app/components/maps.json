@@ -6,6 +6,10 @@
             "title": "Denver map",
             "description": "Lorem ipsum",
             "map-type": "Stylized relief", 
+            "pricing": {
+                "digital": "$50",
+                "printed": "$75"
+            },
             "links": [
                 {
                     "buy": "/",
@@ -31,6 +35,10 @@
             "title": "Alaska map",
             "description": "Lorem ipsum",
             "map-type": "Stylized relief", 
+            "pricing": {
+                "digital": "$25",
+                "printed": "$65"
+            },
             "links": [
                 {
                     "buy": "/",
@@ -56,6 +64,10 @@
             "title": "Ohio election map",
             "description": "Lorem ipsum",
             "map-type": "Data visualization", 
+            "pricing": {
+                "digital": "$35",
+                "printed": "$85"
+            },
             "links": [
                 {
                     "buy": "/",
@@ -81,6 +93,10 @@
             "title": "Switzerland map",
             "description": "Lorem ipsum",
             "map-type": "Stylized relief", 
+            "pricing": {
+                "digital": "$40",
+                "printed": "$90"
+            },
             "links": [
                 {
                     "buy": "/",
@@ -106,6 +122,10 @@
             "title": "USA light map",
             "description": "Lorem ipsum",
             "map-type": "Stylized relief", 
+            "pricing": {
+                "digital": "$28",
+                "printed": "$70"
+            },
             "links": [
                 {
                     "buy": "/",
@@ -156,6 +176,10 @@
             "title": "Yellowstone map",
             "description": "Lorem ipsum",
             "map-type": "Stylized relief", 
+            "pricing": {
+                "digital": "$32",
+                "printed": "$78"
+            },
             "links": [
                 {
                     "buy": "/",

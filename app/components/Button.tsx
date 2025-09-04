@@ -26,24 +26,38 @@ type ButtonProps = {
   variant?: 'primary' | 'ghost' | 'outline' | 'secondary' | string;
   icon?: React.ReactNode;
   onClick?: () => void;
+  price?: string;
 };
 
-export default function Button({ children, link = "", variant = "primary", icon, onClick }: ButtonProps) {
+export default function Button({ children, link = "", variant = "primary", icon, onClick, price }: ButtonProps) {
   const className = styles[`button_${variant}`];
+  
+  const renderContent = () => (
+    <>
+      <span className={styles.buttonText}>
+        {icon && <span className={styles.icon}>{icon}</span>}
+        {children}
+      </span>
+      {price && (
+        <>
+          <span className={styles.divider}></span>
+          <span className={styles.price}>{price}</span>
+        </>
+      )}
+    </>
+  );
   
   if (onClick) {
     return (
       <button onClick={onClick} className={className}>
-        {icon && <span className={styles.icon}>{icon}</span>}
-        {children}
+        {renderContent()}
       </button>
     );
   }
   
   return (
     <Link href={link} className={className}>
-      {icon && <span className={styles.icon}>{icon}</span>}
-      {children}
+      {renderContent()}
     </Link>
   );
 }

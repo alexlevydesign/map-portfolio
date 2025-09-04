@@ -12,6 +12,8 @@ interface ImageComponentProps {
   className?: string;
   width?: number;
   height?: number;
+  digitalPrice?: string;
+  printPrice?: string;
 }
 
 
@@ -32,7 +34,9 @@ export default function ImageComponent({
   alt = '',
   className,
   width = 1920,
-  height = 1080
+  height = 1080,
+  digitalPrice,
+  printPrice
 }: ImageComponentProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,7 +64,11 @@ export default function ImageComponent({
         priority
       />
       <div className={`${styles.MapActionBarContainer} ${isHovered ? styles.visible : ''}`}>
-        <MapActionBar onExpand={handleExpand} />
+        <MapActionBar 
+          onExpand={handleExpand} 
+          digitalPrice={digitalPrice}
+          printPrice={printPrice}
+        />
       </div>
       <Modal 
         isOpen={isModalOpen} 
